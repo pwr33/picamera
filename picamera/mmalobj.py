@@ -2549,7 +2549,7 @@ class MMALISPResizer(MMALComponent):
     __slots__ = ()
     component_type = mmal.MMAL_COMPONENT_DEFAULT_ISP
     opaque_input_subformats = ('OPQV-single',)
-    opaque_output_subformats = (None,)
+    opaque_output_subformats = (None,) * 3
 
 
 class MMALResizer(MMALComponent):
