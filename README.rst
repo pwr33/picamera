@@ -1,6 +1,16 @@
 .. -*- rst -*-
 
 ========
+pwr33/picamera
+========
+
+fork of picamera to test the MMALISPResizer and MMAL pipelines in python3 and do a proof of concept of fast multi resolution captures from the raspberry pi camera video port
+
+If you want to test this, make sure you fork it and install it into a python3 virtual environment as there may well be some unidentified ramifications of having made the two simple changes to mmal.py and mmalobj.py
+
+So as a result of a few days "scientifically" messing around with the ideosyncracies of MMAL, the proof of concept works and is provided here for anyone who wants to study it.
+
+========
 picamera
 ========
 
