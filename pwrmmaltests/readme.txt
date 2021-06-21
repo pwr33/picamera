@@ -1,5 +1,9 @@
 Proof of concept - fast-ish multi resolution capture from Raspberry Pi camera video port using an mmal pipeline in python3
 
+Well, this example points you in the right direction, however you will need to change the callbacks that write to memory buffers to use a bytesarray and do a bytesarray.extend(buf.data) instead of my initial naive, value = buf.data.
+
+Having done that the preview works fine running at same time, and is a fast loop and getting good exposures now!
+
 # a class to test picamera at mmal level
 # very specific functionality - provide 1 pipeline that is exactly what I want and blit functions
 # use video port as its faster
